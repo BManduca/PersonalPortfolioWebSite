@@ -6,7 +6,6 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Gmail } from "@styled-icons/boxicons-logos/Gmail";
 import { PiSunHorizonBold } from "react-icons/pi";
 import { TbHazeMoon } from "react-icons/tb";
-import { RiMoonFoggyLine } from "react-icons/ri";
 import { FaGithub } from "react-icons/fa";
 
 // components
@@ -95,7 +94,7 @@ export default function App() {
             {darkMode ? (
               <PiSunHorizonBold className="w-6 h-6 text-yellow-400" />
             ) : (
-              <RiMoonFoggyLine className="w-6 h-6 text-slate-200" />
+              <TbHazeMoon className="w-6 h-6 text-slate-200" />
             )}
           </button>
         </nav>
