@@ -47,7 +47,6 @@ export default function App() {
         className={`min-h-screen ${darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-900"}`}
       >
         {/* Navbar */}
-
         <nav className="p-4 flex justify-between items-center border-b border-gray-300 dark:border-gray-700">
           <div className="md:hidden">
             {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
@@ -60,7 +59,7 @@ export default function App() {
           </div>
           <img
             className="rounded-[14px] w-12"
-            src="../src/assets/favicon_bm2.png"
+            src="../public/images/favicon_bm2.png"
             alt="icon name Brunno Manduca"
           />
           <ul className="hidden md:flex gap-10">
@@ -176,7 +175,7 @@ export default function App() {
               </div>
               <div className="flex gap-3">
                 <a
-                  href="../public/files/Currículo_Brunno Manduca_do_Prado.pdf"
+                  href="../public/pdfs/Currículo_Brunno Manduca_do_Prado.pdf"
                   download="CV_Brunno_Manduca.pdf"
                   className="ring-1 border p-3 rounded-xl px-6 hover:bg-blue-500 hover:text-white dark:bg-white dark:text-black dark:hover:bg-gray-500 dark:hover:text-white dark:duration-700 transition duration-700"
                 >
@@ -186,7 +185,7 @@ export default function App() {
             </div>
             <div className="flex justify-center items-center">
               <img
-                src="../src/assets/my_picture.jpg" // Caminho ajustado
+                src="../public/images/my_picture.jpg" // Caminho ajustado
                 alt="foto perfil Brunno"
                 className="rounded-3xl h-[350px] lg:h-[400px] transform transition-all duration-700 hover:scale-105 hover:shadow-2xl hover:translate-x-2"
               />
@@ -205,7 +204,7 @@ export default function App() {
             </div>
             <div className="flex flex-col md:flex-row gap-8">
               <img
-                src="../src/assets/picart_desenvolvedor_eu2.png"
+                src="../public/images/picart_desenvolvedor_eu2.png"
                 className="lg:h-[550px] rounded-3xl transform transition-all duration-700 hover:scale-105 hover:shadow-2xl hover:translate-x-4 hidden md:block"
                 alt="Brunno Manduca"
               />
