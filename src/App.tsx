@@ -1,5 +1,7 @@
 import { MoonIcon } from "@heroicons/react/24/outline";
+import { TbHazeMoon } from "react-icons/tb";
 import { SunIcon } from "@heroicons/react/24/outline";
+import { PiSunHorizonBold } from "react-icons/pi";
 import { Gmail } from "@styled-icons/boxicons-logos/Gmail";
 import { FaGithub } from "react-icons/fa";
 import { LinkedinSquare } from "@styled-icons/boxicons-logos/LinkedinSquare";
@@ -47,7 +49,7 @@ export default function App() {
         className={`min-h-screen ${darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-900"}`}
       >
         {/* Navbar */}
-        <nav className="p-6 flex justify-between items-center border-b border-gray-300 dark:border-gray-700">
+        <nav className="p-6 flex justify-between items-center border-b border-gray-400 dark:border-gray-200">
           <div className="md:hidden">
             {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
             <button
@@ -82,12 +84,12 @@ export default function App() {
           {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
           <button
             onClick={() => setDarkMode(!darkMode)}
-            className="p-2 rounded-full bg-gray-200 dark:bg-gray-800 transition duration-700"
+            className="p-2 rounded-full bg-gray-800 dark:bg-gray-100 transition duration-700"
           >
             {darkMode ? (
-              <SunIcon className="w-6 h-6 text-yellow-500" />
+              <PiSunHorizonBold className="w-6 h-6 text-yellow-400" />
             ) : (
-              <MoonIcon className="w-6 h-6 text-gray-700" />
+              <TbHazeMoon className="w-6 h-6 text-white" />
             )}
           </button>
         </nav>
