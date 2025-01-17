@@ -1,6 +1,4 @@
-import { MoonIcon } from "@heroicons/react/24/outline";
 import { TbHazeMoon } from "react-icons/tb";
-import { SunIcon } from "@heroicons/react/24/outline";
 import { PiSunHorizonBold } from "react-icons/pi";
 import { Gmail } from "@styled-icons/boxicons-logos/Gmail";
 import { FaGithub } from "react-icons/fa";
