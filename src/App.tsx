@@ -1,16 +1,23 @@
-import { TbHazeMoon } from "react-icons/tb";
-import { PiSunHorizonBold } from "react-icons/pi";
-import { Gmail } from "@styled-icons/boxicons-logos/Gmail";
-import { FaGithub } from "react-icons/fa";
-import { LinkedinSquare } from "@styled-icons/boxicons-logos/LinkedinSquare";
 import { useEffect, useState } from "react";
+
+// icons
+import { LinkedinSquare } from "@styled-icons/boxicons-logos/LinkedinSquare";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Gmail } from "@styled-icons/boxicons-logos/Gmail";
+import { PiSunHorizonBold } from "react-icons/pi";
+import { TbHazeMoon } from "react-icons/tb";
+import { RiMoonFoggyLine } from "react-icons/ri";
+import { FaGithub } from "react-icons/fa";
+
+// components
+import { SectionTransition } from "./components/SectionTransition";
+import { ScrollToTopButton } from "./components/ScrollToTopButton";
 import { ProjectsGrid } from "./components/ProjectsGrid";
 import { SocialLinks } from "./components/SocialLinks";
-import { ScrollToTopButton } from "./components/ScrollToTopButton";
 import { SkillsGrid } from "./components/SkillsGrid";
-import { SectionTransition } from "./components/SectionTransition";
+
+// scroll
 import { Link } from "react-scroll";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 // https://www.youtube.com/watch?v=fufgnJopoZc
 // https://icongr.am/devicon
@@ -79,15 +86,16 @@ export default function App() {
               </li>
             ))}
           </ul>
+
           {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
           <button
             onClick={() => setDarkMode(!darkMode)}
-            className="p-2 rounded-full bg-gray-800 dark:bg-gray-100 transition duration-700"
+            className="p-2 rounded-full bg-slate-950 dark:bg-white transition duration-700"
           >
             {darkMode ? (
               <PiSunHorizonBold className="w-6 h-6 text-yellow-400" />
             ) : (
-              <TbHazeMoon className="w-6 h-6 text-white" />
+              <RiMoonFoggyLine className="w-6 h-6 text-slate-200" />
             )}
           </button>
         </nav>
