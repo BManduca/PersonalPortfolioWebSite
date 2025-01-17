@@ -40,3 +40,4 @@ Thumbs.db
 # Uncomment the next line if you don't want to track yarn.lock or package-lock.json
 # yarn.lock
 # package-lock.json
+.vercel
