@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 import { LinkedinSquare } from "@styled-icons/boxicons-logos/LinkedinSquare";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Gmail } from "@styled-icons/boxicons-logos/Gmail";
-import { PiSunHorizonBold } from "react-icons/pi";
-import { TbHazeMoon } from "react-icons/tb";
+import { PiSunHorizonFill } from "react-icons/pi";
+import { RiMoonFoggyFill } from "react-icons/ri";
 import { FaGithub } from "react-icons/fa";
 
 // components
@@ -89,12 +89,12 @@ export default function App() {
           {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
           <button
             onClick={() => setDarkMode(!darkMode)}
-            className="p-2 rounded-full bg-slate-950 dark:bg-white transition duration-700"
+            className="p-2 rounded-full transition duration-700"
           >
             {darkMode ? (
-              <PiSunHorizonBold className="w-6 h-6 text-yellow-400" />
+              <PiSunHorizonFill className="w-6 h-6 text-yellow-400" />
             ) : (
-              <TbHazeMoon className="w-6 h-6 text-slate-200" />
+              <RiMoonFoggyFill className="w-6 h-6 text-gray-800" />
             )}
           </button>
         </nav>
