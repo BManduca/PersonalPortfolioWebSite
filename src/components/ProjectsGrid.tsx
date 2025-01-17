@@ -16,7 +16,7 @@ const projects: Project[] = [
     title: "Letmeask",
     description:
       "Aplicação web de uma plataforma, aonde os usuários terão o poder de criar salas de perguntas e respostas em tempo real. Desenvolvida com React e SCSS.",
-    image: "../public/imagens/letmeask_project.png",
+    image: "/imagens/letmeask_project.png",
     link: "https://letmeask-8ff68.web.app/",
     github: "https://github.com/BManduca/nlw6_letmeask_bm"
   },
@@ -25,7 +25,7 @@ const projects: Project[] = [
     title: "ToDo List",
     description:
       "Aplicação web voltada a auxiliar na criação de TodoList, com foco em organização e execução de tarefas. Desenvolvida com React, TS e CSS.",
-    image: "../public/imagens/todo_list_challenge_project.png",
+    image: "/imagens/todo_list_challenge_project.png",
     link: "https://projectchallengetodolist-mand.vercel.app/",
     github: "https://github.com/BManduca/projects-react-rocketseat/tree/main/ProjectChallengeToDoList"
   },
@@ -34,7 +34,7 @@ const projects: Project[] = [
     title: "Pomodoro Timer",
     description:
       "Aplicação web para auxiliar na jornada do dia a dia, no intuito de realizar ciclos pomodoros e assim ter um maior aproveitamento do tempo durante as tarefas. Desenvolvida com React, TS e CSS.",
-    image: "../public/imagens/pomodoro_timer_project.png",
+    image: "/imagens/pomodoro_timer_project.png",
     link: "https://projectpomodorotimer-mand.vercel.app/",
     github: "https://github.com/BManduca/projects-react-rocketseat/tree/main/ProjectPomodoroTimer"
   },
@@ -43,7 +43,7 @@ const projects: Project[] = [
     title: "Coffee Delivery",
     description:
       "Aplicação web de um e-commerce para venda e delivery de cafés. Desenvolvida com React, TS e CSS.",
-    image: "../public/imagens/coffee_delivery_project.png",
+    image: "/imagens/coffee_delivery_project.png",
     link: "https://projectcoffeedelivery-mand.vercel.app/",
     github: "https://github.com/BManduca/projects-react-rocketseat/tree/main/ProjectChallengeCoffeeDelivery"
   },
