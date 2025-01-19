@@ -60,7 +60,9 @@ export default function App() {
               onClick={() => setMenuOpen(!menuOpen)}
               className="p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
             >
-              <Bars3Icon className={`w-6 h-6 transition-transform duration-300 ${menuOpen ? "rotate-90 opacity-0" : "rotate-0 opacity-100"}`} />
+              <Bars3Icon
+                className={`w-6 h-6 transition-transform duration-300 ${menuOpen ? "rotate-90 opacity-0" : "rotate-0 opacity-100"}`}
+              />
             </button>
           </div>
           <img
@@ -115,7 +117,9 @@ export default function App() {
               className="absolute top-3 right-3 p-2 text-gray-700 dark:text-gray-300 focus:outline-none"
               aria-label="Close menu"
             >
-              <XMarkIcon className={`w-6 h-6 transition-transform duration-500 ease-in-out ${menuOpen ? "rotate-90 scale-100" : "-rotate-75"}`} />
+              <XMarkIcon
+                className={`w-6 h-6 transition-transform duration-500 ease-in-out ${menuOpen ? "rotate-90 scale-100" : "-rotate-75"}`}
+              />
             </button>
 
             {/* Links do menu */}
@@ -212,15 +216,13 @@ export default function App() {
             <div className="flex flex-col md:flex-row gap-8">
               <img
                 src="/imagens/picart_desenvolvedor_eu2.png"
-                className="lg:h-[550px] rounded-3xl transform transition-all duration-700 hover:scale-105 hover:shadow-2xl hover:translate-x-4 hidden md:block"
+                className="mt-4 lg:h-[550px] rounded-3xl transform transition-all duration-700 hover:scale-105 hover:shadow-2xl hover:translate-x-4 hidden lg:block"
                 alt="Brunno Manduca"
               />
               <div className="p-4 px-2 lg:px-24 flex flex-col gap-5 rounded-3xl">
                 <div className="border text-xl font-serif font-bold rounded-2xl p-5">
                   <div className="flex justify-center items-center font-serif text-xl font-bold rounded-2xl p-2">
-                    {/* text-4xl font-bold font-serif underline md:underline-none border-b-2 border-blue-600 md:border-none */}
-                    {/* text-xl font-bold lg:mr-4 font-serif */}
-                    <h2 className="text-xl lg:text-4xl lg:mr-4 font-bold font-serif md:underline-none border-b-2 border-blue-600 md:border-none">
+                    <h2 className="text-xl lg:text-3xl lg:mr-4 md:mr-4 font-bold font-serif md:underline-none border-b-2 border-blue-600 md:border-none">
                       Brunno Manduca
                     </h2>
                     <hr className="w-1/4 border-t-2 border-blue-600 dark:border-sky-500 hidden md:block" />
@@ -253,7 +255,7 @@ export default function App() {
                 </div>
                 <div className="border p-5 rounded-2xl">
                   <div className="flex justify-center items-center font-serif text-xl font-bold rounded-2xl p-2">
-                    <h2 className="text-xl lg:text-4xl lg:mr-4 font-bold font-serif md:underline-none border-b-2 border-blue-600 md:border-none">
+                    <h2 className="text-xl lg:text-3xl lg:mr-4 md:mr-4 font-bold font-serif md:underline-none border-b-2 border-blue-600 md:border-none">
                       Redes
                     </h2>
                     <hr className="w-1/4 border-t-2 border-blue-600 dark:border-sky-500 hidden md:block" />
