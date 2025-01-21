@@ -109,12 +109,12 @@ export default function App() {
               : "-translate-y-full opacity-0"
           }`}
         >
-          <div className="relative bg-gray-600 dark:bg-white shadow-lg rounded-b-lg border-b border-gray-300 dark:border-gray-700">
-            {/* Botão de fechar */}
+          <div className={`relative shadow-lg rounded-b-lg border-b-2 ${darkMode ? "bg-white border-gray-900" : "bg-gray-500 border-sky-500"}`}>
+            {/* button close menu */}
             {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
             <button
               onClick={() => setMenuOpen(false)}
-              className="absolute top-3 right-3 p-2 text-white dark:text-gray-900 focus:outline-none"
+              className={`absolute top-3 right-3 p-2 focus:outline-none ${darkMode ? "text-gray-900" : "text-white"}`}
               aria-label="Close menu"
             >
               <XMarkIcon
@@ -130,7 +130,7 @@ export default function App() {
                   to={item.to}
                   smooth={true}
                   duration={500}
-                  className="text-lg font-serif font-semibold text-white dark:text-gray-700 cursor-pointer hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className={`text-lg font-serif font-semibold cursor-pointer hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500 ${darkMode ? "text-gray-700" : "text-white"}`}
                   onClick={() => setMenuOpen(false)} // Fecha ao clicar em um link
                 >
                   {item.name}
