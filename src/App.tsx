@@ -109,12 +109,12 @@ export default function App() {
               : "-translate-y-full opacity-0"
           }`}
         >
-          <div className="relative bg-white dark:bg-gray-900 shadow-lg rounded-b-lg border-b border-gray-300 dark:border-gray-700">
+          <div className="relative bg-gray-600 dark:bg-white shadow-lg rounded-b-lg border-b border-gray-300 dark:border-gray-700">
             {/* Botão de fechar */}
             {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
             <button
               onClick={() => setMenuOpen(false)}
-              className="absolute top-3 right-3 p-2 text-gray-700 dark:text-gray-300 focus:outline-none"
+              className="absolute top-3 right-3 p-2 text-white dark:text-gray-900 focus:outline-none"
               aria-label="Close menu"
             >
               <XMarkIcon
@@ -130,7 +130,7 @@ export default function App() {
                   to={item.to}
                   smooth={true}
                   duration={500}
-                  className="text-lg font-semibold cursor-pointer hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="text-lg font-serif font-semibold text-white dark:text-gray-700 cursor-pointer hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500"
                   onClick={() => setMenuOpen(false)} // Fecha ao clicar em um link
                 >
                   {item.name}
@@ -144,19 +144,19 @@ export default function App() {
         <SectionTransition>
           <header className="grid grid-cols-1 md:grid-cols-2">
             <div
-              className=" p-6 lg:p-24 flex flex-col gap-4 lg:gap-6 items-center"
+              className="p-6 lg:p-24 flex flex-col gap-4 lg:gap-6 items-center"
               id="header"
             >
-              <p className="text-2xl lg:text-4xl font-bold font-serif">
+              <p className="text-2xl md:text-xl lg:text-3xl font-bold font-serif">
                 Brunno Manduca
               </p>
               <div className="flex space-x-3">
-                <p className="text-xl lg:text-3xl font-bold font-serif">
+                <p className="text-xl lg:text-2xl font-bold font-serif">
                   Desenvolvedor
                 </p>
-                <span className="text-xl lg:text-3xl">💻</span>
+                <span className="text-xl lg:text-2xl">💻</span>
               </div>
-              <p className="text-xl lg:text-3xl font-bold font-serif">
+              <p className="text-xl lg:text-2xl font-bold font-serif">
                 Front-end.
               </p>
               <div className="flex gap-4">
@@ -198,7 +198,7 @@ export default function App() {
               <img
                 src="/imagens/my_picture.jpg" // Caminho ajustado
                 alt="foto perfil Brunno"
-                className="rounded-3xl h-[350px] lg:h-[400px] transform transition-all duration-700 hover:scale-105 hover:shadow-2xl hover:translate-x-2"
+                className="rounded-3xl md:h-[300px] md:mt-4 lg:h-[400px] transform transition-all duration-700 hover:scale-105 hover:shadow-2xl hover:translate-x-2"
               />
             </div>
           </header>
