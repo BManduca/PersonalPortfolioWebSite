@@ -1,4 +1,5 @@
 # 👨🏻‍💻 Website Portfólio Pessoal
+![](./public/imagens/mockup_portfolio_manduca.png)
 
 ## 📚 Descrição do projeto
 A idéia inicial desse projeto, foi desenvolver um portfólio pessoal para que eu pudesse divulgar e deixar mais presente para a comunidade a minha profissão como **Desenvolvedor Front-End**.
