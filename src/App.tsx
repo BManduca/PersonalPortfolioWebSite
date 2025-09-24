@@ -152,7 +152,7 @@ export default function App() {
               </p>
               <div className="flex space-x-3">
                 <p className="text-xl lg:text-2xl font-bold font-serif">
-                  Desenvolvedor
+                  Desenvolvedor Pleno
                 </p>
                 <span className="text-xl lg:text-2xl">💻</span>
               </div>
